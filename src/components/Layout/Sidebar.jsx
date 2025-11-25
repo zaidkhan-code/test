@@ -1,4 +1,3 @@
-// Sidebar.jsx
 import {
   Box,
   VStack,
@@ -87,8 +86,6 @@ export const Sidebar = ({
           aria-label={isSidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
         />
       </Flex>
-
-      {/* Menu Items */}
       <VStack spacing={1} align="stretch" p={2}>
         {menuItems.map((item) => (
           <NavLink key={item.path} to={item.path}>

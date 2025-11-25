@@ -67,7 +67,6 @@ export default function Login() {
 
   return (
     <Flex minH="100vh">
-      {/* Left Side - Background Image with Animation */}
       <MotionBox
         flex={1}
         bgImage="url('/Gemini_Generated_Image_l2xdpfl2xdpfl2xd.png')"
@@ -104,7 +103,6 @@ export default function Login() {
         </MotionVStack>
       </MotionBox>
 
-      {/* Right Side - Login Form */}
       <Flex flex={1} align="center" justify="center" p={8} bg="gray.50">
         <MotionBox
           w="full"
@@ -237,7 +235,6 @@ export default function Login() {
         </MotionBox>
       </Flex>
 
-      {/* Forgot Password Modal */}
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent>

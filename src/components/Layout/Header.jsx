@@ -1,4 +1,3 @@
-// Header.jsx
 import {
   Box,
   Flex,
@@ -55,7 +54,6 @@ export const Header = ({ onOpenSidebar }) => {
           </Text>
         </Box>
 
-        {/* User Menu */}
         <Menu>
           <MenuButton _hover={{ bg: "gold.600" }} borderRadius="md">
             <HStack spacing={2} cursor="pointer">

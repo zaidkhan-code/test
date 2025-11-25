@@ -58,7 +58,7 @@ export const AddContactModal = () => {
 
   const handlePhoneChange = (e) => {
     const value = e.target.value;
-    // Allow only numbers
+
     if (/^\d*$/.test(value)) {
       setFormData({ ...formData, phone: value });
     }

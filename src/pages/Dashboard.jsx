@@ -21,12 +21,8 @@ const ContactsChart = lazy(() =>
   import("../components/Dashboard/ContactsChart")
 );
 
-// Motion wrapper
 const MotionStat = motion(Stat);
-
-// StatCard component
 const StatCard = ({ title, value, icon, color, trend }) => {
-  // Chakra color values
   const bgColor = useColorModeValue(`${color}.100`, `${color}.700`);
   const iconColor = useColorModeValue(`${color}.600`, `${color}.300`);
   const arrowColor = trend >= 0 ? "green.400" : "red.400";
@@ -78,7 +74,6 @@ export default function Dashboard() {
   return (
     <MainLayout>
       <Box>
-        {/* Welcome Section */}
         <Flex align="center" gap={3} mb={8}>
           <Box>
             <Text fontSize="3xl" fontWeight="bold" color={textColor}>
@@ -88,7 +83,6 @@ export default function Dashboard() {
           </Box>
         </Flex>
 
-        {/* Stats Section */}
         <Text fontSize="xl" fontWeight="600" mb={4}>
           Monthly Sales Performance
         </Text>
@@ -123,7 +117,6 @@ export default function Dashboard() {
           />
         </SimpleGrid>
 
-        {/* Chart Section */}
         <MotionStat
           bg={useColorModeValue("white", "gray.700")}
           p={6}
